@@ -1,0 +1,5 @@
+INFO User login successful
+WARNING Failed login attempt
+ERROR Unauthorized access attempt
+INFO User logout
+WARNING Failed login attempt
