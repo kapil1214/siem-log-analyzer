@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SIEM Log Analyzer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>SIEM Security Log Analyzer</h1>
+
+<div class="stats">
+
+<div class="card">
+<h2>Total Logs</h2>
+<p>{{total_logs}}</p>
+</div>
+
+<div class="card">
+<h2>Suspicious Alerts</h2>
+<p>{{alert_count}}</p>
+</div>
+
+</div>
+
+<h2>Suspicious Activities</h2>
+
+<ul>
+{% for alert in alerts %}
+<li>{{alert}}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
